@@ -5,18 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1134874-afcd-429f-841c-959c61642a81" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book/src/main/java/org/library/book/controller/BookController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book/src/main/java/org/library/book/model/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book/src/main/java/org/library/book/model/Status.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orders/src/main/java/org/library/orders/client/BookClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orders/src/main/java/org/library/orders/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orders/src/main/java/org/library/orders/model/Orders.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book/src/main/java/org/library/book/model/BookCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book/src/main/java/org/library/book/service/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/java/org/library/book/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/org/library/book/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/java/org/library/book/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/org/library/book/model/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/java/org/library/book/model/Status.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/src/main/java/org/library/orders/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders/src/main/java/org/library/orders/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -35,6 +31,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "geoffroym"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/geoffroym/library-microservices-demo.git",
+    "accountId": "8c821e66-0e14-4a56-b263-62ce92930b30"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 8
 }]]></component>
@@ -53,9 +61,11 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.BookApplication.executor": "Run",
+    "Spring Boot.OrdersApplication.executor": "Run",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "21",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/camil/IdeaProjects/5. MicroServices/2025microservices-lecture3",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -66,6 +76,19 @@
   }
 }]]></component>
   <component name="RunManager" selected="Spring Boot.OrdersApplication">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="BookStore" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="BookStore" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BookApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="book" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.library.book.BookApplication" />
@@ -97,7 +120,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1756367425196</updated>
-      <workItem from="1756367426235" duration="4847000" />
+      <workItem from="1756367426235" duration="10436000" />
     </task>
     <servers />
   </component>
