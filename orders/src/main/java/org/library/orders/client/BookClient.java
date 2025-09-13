@@ -33,4 +33,14 @@ public class BookClient {
         );
         return response.getBody();
     }
+
+    public boolean decreaseStock(Long id) {
+        ResponseEntity<Void> response = restTemplate.exchange(
+                baseUrl + "/" + id + "/decrease-stock",
+                HttpMethod.PUT,
+                null,
+                Void.class
+        );
+        return response.getStatusCode().is2xxSuccessful();
+    }
 }

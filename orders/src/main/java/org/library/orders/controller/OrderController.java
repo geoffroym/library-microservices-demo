@@ -1,38 +1,38 @@
 package org.library.orders.controller;
 
 
-import org.library.orders.client.BookClient;
 import org.library.orders.model.Orders;
+import org.library.orders.service.OrderService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController
 @RequestMapping("api/orders")
 public class OrderController {
 
-    private final BookClient bookClient;
-    private final List<Orders> orders = new ArrayList<>();
+    private final OrderService orderService;
 
-    public OrderController(BookClient bookClient) {
-        this.bookClient = bookClient;
+    @Autowired
+    public OrderController(OrderService orderService) {
+        this.orderService = orderService;
     }
 
     @PostMapping
-    public String createOrder(@RequestBody Orders order) {
-        orders.add(order);
-
-        StringBuilder books = new StringBuilder();
-        for (Long id : order.getBookIds()) {
-            books.append(bookClient.getBookById(id)).append(", ");
+    public ResponseEntity<String> createOrder(@RequestBody Orders order) {
+        try {
+            orderService.createOrder(order);
+            return ResponseEntity.ok("Order created");
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
         }
-        return "Order created for: " + books;
     }
 
     @GetMapping
-    public List<Orders> getAllOrders() {
-        return orders;
+    public ResponseEntity<List<Orders>> getAllOrders() {
+        return ResponseEntity.ok(orderService.getAllOrders());
     }
 
 }
