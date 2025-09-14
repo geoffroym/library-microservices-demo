@@ -7,20 +7,20 @@ It’s not meant to be a production-ready project. It’s intentionally simple a
 ## Learning Roadmap
 
  Introduction
- [x] SpringBoot services
- [x] Domain and Scaling
- [x] Synchronous communication between two SpringBoot services
- [ ] Asynchronous communication between modules
- [ ] Domain and information flow
- [ ] Slow or broken communication
- [ ] Asynchronous communication overview
- [ ] Containerization – Docker
- [ ] Gateway – Access to the system
- [ ] Centralized configuration
- [ ] More Docker – Docker Compose
- [ ] Software Quality – testing and Cucumber
- [ ] Spring Security
- [ ] Orchestration & Deployment
+ - [x] SpringBoot services
+ - [x] Domain and Scaling
+ - [x] Synchronous communication between two SpringBoot services
+ - [ ] Asynchronous communication between modules
+ - [ ] Domain and information flow
+ - [ ] Slow or broken communication
+ - [ ] Asynchronous communication overview
+ - [ ] Containerization – Docker
+ - [ ] Gateway – Access to the system
+ - [ ] Centralized configuration
+ - [ ] More Docker – Docker Compose
+ - [ ] Software Quality – testing and Cucumber
+ - [ ] Spring Security
+ - [ ] Orchestration & Deployment
 
 ## Services
 
