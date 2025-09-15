@@ -1,12 +1,23 @@
-//filter books before rendering books as cards
-
-import { useState } from "react";
-import { books } from "../books.js";
+import {useState, useEffect} from "react";
 import SearchBar from "./SearchBar.jsx";
 import BookCard from "./Bookcard.jsx";
 
-function BookList() {
-    const [filters, setFilters] = useState({ title: "", author: "", category: "" });
+function BookList({addToOrder}) {
+    const [books, setBooks] = useState([]);
+    const [filters, setFilters] = useState({title: "", author: "", category: ""});
+
+    useEffect(() => {
+        const fetchBooks = async () => {
+            try {
+                const res = await fetch("http://localhost:8000/api/books");
+                const data = await res.json();
+                setBooks(data);
+            } catch (err) {
+                console.error("Error fetching books:",err);
+            }
+        }
+        fetchBooks();
+    }, []);
 
     const filteredBooks = books.filter((book) =>
         book.title.toLowerCase().includes(filters.title.toLowerCase()) &&
@@ -16,10 +27,10 @@ function BookList() {
 
     return (
         <div>
-            <SearchBar filters={filters} setFilters={setFilters} />
+            <SearchBar filters={filters} setFilters={setFilters}/>
             <div>
                 {filteredBooks.map((book) => (
-                    <BookCard key={book.id} book={book} />
+                    <BookCard key={book.id} book={book} addToOrder={addToOrder}/>
                 ))}
             </div>
         </div>

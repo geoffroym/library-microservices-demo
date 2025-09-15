@@ -1,10 +1,4 @@
-//displays books added to order
-import { useContext } from "react";
-import { OrderContext} from "../context/OrderContext.jsx";
-
-function Order() {
-    const { order } = useContext(OrderContext);
-
+function Order({order}) {
     return (
         <div>
             <h2>My Order</h2>

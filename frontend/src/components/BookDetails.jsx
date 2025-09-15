@@ -1,14 +1,25 @@
-import { useParams } from "react-router-dom";
-import { books } from "../books.js"
-import { useContext } from "react";
-import { OrderContext } from "../context/OrderContext.jsx";
+import {useParams} from "react-router-dom";
+import {useState, useEffect} from "react";
 
-function BookDetails() {
-    const { id } = useParams();
-    const book = books.find((b) => b.id === id);
-    const { addToOrder } = useContext(OrderContext);
+function BookDetails({addToOrder}) {
+    const {id} = useParams();
+    const [book, setBook] = useState(null);
 
-    if (!book) return <p>Book not found</p>;
+    useEffect(() => {
+        const fetchBook = async () => {
+            try {
+                const res = await fetch(`http://localhost:8000/api/books/${id}`);
+                if (!res.ok) throw new Error("Book not found");
+                const data = await res.json();
+                setBook(data);
+            } catch (err) {
+                console.error(err);
+            }
+        };
+        fetchBook();
+    }, [id]);
+
+    if (!book) return <p>Loading book details...</p>;
 
     return (
         <div>

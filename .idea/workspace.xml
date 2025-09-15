@@ -4,7 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1134874-afcd-429f-841c-959c61642a81" name="Changes" comment="" />
+    <list default="true" id="b1134874-afcd-429f-841c-959c61642a81" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/book/src/main/java/org/library/book/configs/AmqpConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/orders/src/main/java/org/library/orders/configs/AmqpConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/orders/src/main/java/org/library/orders/eventdriven/OrderEventPublisher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/book/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/java/org/library/book/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/org/library/book/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/BookDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/BookDetails.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/BookList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/BookList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Bookcard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Bookcard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Order.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Order.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/SearchBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/SearchBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/context/OrderContext.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/orders/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/src/main/java/org/library/orders/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders/src/main/java/org/library/orders/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/src/main/java/org/library/orders/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders/src/main/java/org/library/orders/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/orders/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,9 +55,9 @@
     &quot;accountId&quot;: &quot;8c821e66-0e14-4a56-b263-62ce92930b30&quot;
   }
 }</component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="31uIFBx7N02teO3BPohLJ55WhxE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -57,7 +78,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "21",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/camil/IdeaProjects/5. MicroServices/2025microservices-lecture3",
+    "last_opened_file_path": "C:/Users/camil/IdeaProjects/5. MicroServices/Library",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -65,6 +86,7 @@
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/Users/camil/IdeaProjects/5. MicroServices/Library/src/main/java/org/library/Main.java",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2024.2.0.2\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -87,8 +109,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.419" />
-        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.419" />
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.26775.15" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.26775.15" />
       </set>
     </attachedChunks>
   </component>
@@ -104,6 +126,9 @@
       <workItem from="1757073981104" duration="786000" />
       <workItem from="1757322496619" duration="1285000" />
       <workItem from="1757753610240" duration="10098000" />
+      <workItem from="1757867277731" duration="8094000" />
+      <workItem from="1757937792404" duration="320000" />
+      <workItem from="1757938139622" duration="4557000" />
     </task>
     <servers />
   </component>
