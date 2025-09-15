@@ -25,18 +25,19 @@ It’s not meant to be a production-ready project. It’s intentionally simple a
 ## Services
 
 ### Book Service:
-Manage books (CRUD)
-Keep track of stock quantities
-Exposes an endpoint to decrease stock when an order is placed
+- Manage books (CRUD)
+- Keep track of stock quantities
+- Exposes an endpoint to decrease stock when an order is placed
 
 ### Order Service:
-Place and list orders
-Talks to the Book Service to check and update stock before saving an order
+- Place and list orders
+- Talks to the Book Service to check and update stock before saving an order
 
 ## Tech Stack
 
-Java + Spring Boot
-
-REST (with RestTemplate)
-
-Postman (for testing)
+- Java + Spring Boot
+- React, Vite 
+- REST (with RestTemplate)
+- Postman (for testing)
+- RabbitMQ
+- Docker
