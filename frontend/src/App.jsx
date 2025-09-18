@@ -31,7 +31,7 @@ function App() {
             <Header/>
             <Routes>
                 <Route path={"/"} element={<BookList addToOrder={addToOrder}/>}/>
-                <Route path={"/book/:id"} element={<BookDetails addToOrder={{addToOrder}}/>}/>
+                <Route path={"/book/:id"} element={<BookDetails addToOrder={addToOrder}/>}/>
                 <Route path={"/order"} element={<Order order={order}/>}/>
             </Routes>
         </div>
