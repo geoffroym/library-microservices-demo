@@ -10,10 +10,7 @@ It’s not meant to be a production-ready project. It’s intentionally simple a
  - [x] SpringBoot services
  - [x] Domain and Scaling
  - [x] Synchronous communication between two SpringBoot services
- - [ ] Asynchronous communication between modules
- - [ ] Domain and information flow
- - [ ] Slow or broken communication
- - [ ] Asynchronous communication overview
+ - [x] Asynchronous communication between modules
  - [ ] Containerization – Docker
  - [ ] Gateway – Access to the system
  - [ ] Centralized configuration
