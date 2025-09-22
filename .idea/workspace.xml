@@ -5,17 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1134874-afcd-429f-841c-959c61642a81" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/book/src/main/java/org/library/book/model/Orders.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/java/config/AmqpConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/java/eventdriven/NotificationConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/java/model/Orders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/orders/src/main/java/org/library/orders/config/AmqpConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/orders/src/main/java/org/library/orders/eventdriven/OrderEventPublisher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/book/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book/src/main/java/org/library/book/configs/AmqpConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/book/src/main/java/org/library/book/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/org/library/book/model/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orders/src/main/java/org/library/orders/configs/AmqpConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/orders/src/main/java/org/library/orders/eventdriven/OrderEventPublisher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/notification/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/orders/src/main/java/org/library/orders/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders/src/main/java/org/library/orders/service/OrderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/orders/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/orders/src/main/resources/application.properties" afterDir="false" />
     </list>
@@ -48,6 +45,10 @@
     &quot;accountId&quot;: &quot;8c821e66-0e14-4a56-b263-62ce92930b30&quot;
   }
 }</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -66,12 +67,13 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.BookApplication.executor": "Run",
+    "Spring Boot.NotificationApplication.executor": "Run",
     "Spring Boot.OrdersApplication.executor": "Run",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "21",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/camil/IdeaProjects/5. MicroServices/2025microservices-lecture7_inclass_docker",
+    "last_opened_file_path": "C:/Users/camil/IdeaProjects/5. MicroServices/Library",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -79,14 +81,33 @@
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/Users/camil/IdeaProjects/5. MicroServices/Library/src/main/java/org/library/Main.java",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
     "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2024.2.0.2\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
   <component name="RunManager" selected="Spring Boot.OrdersApplication">
     <configuration name="BookApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="book" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.library.book.BookApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NotificationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="notification" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.library.notification.NotificationApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -122,7 +143,10 @@
       <workItem from="1757867277731" duration="8094000" />
       <workItem from="1757937792404" duration="320000" />
       <workItem from="1757938139622" duration="5049000" />
-      <workItem from="1758182612774" duration="10057000" />
+      <workItem from="1758182612774" duration="10653000" />
+      <workItem from="1758286992726" duration="82000" />
+      <workItem from="1758535390189" duration="3826000" />
+      <workItem from="1758540460232" duration="1517000" />
     </task>
     <servers />
   </component>

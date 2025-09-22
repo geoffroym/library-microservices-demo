@@ -1,6 +1,7 @@
 package org.library.orders.service;
 
 import org.library.orders.client.BookClient;
+import org.library.orders.eventdriven.OrderEventPublisher;
 import org.library.orders.model.Orders;
 import org.springframework.stereotype.Service;
 
@@ -11,9 +12,11 @@ import java.util.List;
 public class OrderService {
     private final List<Orders> orders = new ArrayList<>();
     private final BookClient bookClient;
+    private final OrderEventPublisher orderEventPublisher;
 
-    public OrderService(final BookClient bookClient) {
+    public OrderService(final BookClient bookClient, OrderEventPublisher orderEventPublisher) {
         this.bookClient = bookClient;
+        this.orderEventPublisher = orderEventPublisher;
     }
 
     public List<Orders> getAllOrders() {
@@ -30,6 +33,7 @@ public class OrderService {
         }
 
         orders.add(order);
+        orderEventPublisher.publishOrderPlacedEvent(order);
     }
 
 }
